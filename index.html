@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="box-wrap">
+        <h2>Simple Photo Editor with Javascript</h2>
+        <div class="container">
+            <div class="selector">
+                <div class="filter">
+                    <label for="blur">Blur</label>
+                    <input type="range" id="blur" min="0" max="5" value="0" step="0.1">
+                </div>
+                <div class="filter">
+                    <label for="sepia">Sepia</label>
+                    <input type="range" id="sepia" min="0" max="100" value="0">
+                </div>
+                <div class="filter">
+                    <label for="contrast">Contrast</label>
+                    <input type="range" id="contrast" min="0" max="200" value="100">
+                </div>
+                <div class="filter">
+                    <label for="hue-Rotate">Hue-Rotate</label>
+                    <input type="range" id="hue-Rotate" min="0" max="360" value="0">
+                </div>
+                <div class="flip-filter">
+                    <div class="flip-filter-content">
+                        <input type="radio" name="flip" id="no-flip" checked>
+                        <label for="no-flip">No Flip</label>
+                    </div>
+                    <div class="flip-filter-content">
+                        <input type="radio" name="flip" id="flip-horizontal">
+                        <label for="flip-horizontal">Flip Horizontal</label>
+                    </div>
+                    <div class="flip-filter-content">
+                        <input type="radio" name="flip" id="flip-vertical">
+                        <label for="flip-vertical">Flip Vertical</label>
+                    </div>
+                </div>
+            </div>
+            <div class="img-wrap">
+                <figure class="img-preview">
+                    <img id="img-preview-content">
+                </figure>
+                <input type="file" id="img-upload" accept="Image/*">
+                <label for="img-upload">Drop Image</label>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
